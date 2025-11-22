@@ -20,7 +20,7 @@
       width: 900px;  /* proportional to 30 inches */
       height: 600px; /* proportional to 20 inches */
       background: white;
-      border: 8px solid black;
+      border: 12px double purple;
       border-radius: 20px;
       display: flex;
       flex-direction: column;
@@ -47,20 +47,29 @@
       
     }
 
-    .accent-bar {
-      margin-top: 40px;
-      width: 80%;
-      height: 20px;
-      background: pink;
-      border-radius: 10px;
+    
+    .corner-doodle {
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      border: 6px solid pink;
+      border-radius: 20px;
     }
+    .top-left { top: 20px; left: 20px; }
+    .top-right { top: 20px; right: 20px; }
+    .bottom-left { bottom: 20px; left: 20px; }
+    .bottom-right { bottom: 20px; right: 20px; }
   </style>
 </head>
 <body>
   <div class="poster">
+    <div class="corner-doodle top-left"></div>
+    <div class="corner-doodle top-right"></div>
+    <div class="corner-doodle bottom-left"></div>
+    <div class="corner-doodle bottom-right"></div>
     <div class="headline">This Park has<br>NO Speed Limit!</div>
     <div class="subtext">Go 다은!</div>
-    <div class="accent-bar"></div>
+    
   </div>
 </body>
 </html>
