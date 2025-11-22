@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Half Marathon Poster</title>
+  <style>
+    /* Poster size in pixels approximated for screen (ratio 30w : 20h) */
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #f5f5f5;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+    }
+
+    .poster {
+      width: 900px;  /* proportional to 30 inches */
+      height: 600px; /* proportional to 20 inches */
+      background: linear-gradient(135deg, #ff9ecb, #8fb3ff, #c59bff);
+      border: 8px solid black;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 30px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    }
+
+    .headline {
+      font-size: 72px;
+      font-weight: 900;
+      color: black;
+      text-shadow: 4px 4px yellow;
+      line-height: 1.1;
+    }
+
+    .subtext {
+      margin-top: 30px;
+      font-size: 56px;
+      font-weight: 800;
+      color: #00a86b; /* green */
+      text-shadow: 3px 3px black;
+    }
+
+    .accent-bar {
+      margin-top: 40px;
+      width: 80%;
+      height: 20px;
+      background: linear-gradient(90deg, pink, blue, purple, green, yellow);
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="poster">
+    <div class="headline">This Park has<br>NO Speed Limit!</div>
+    <div class="subtext">Go 다은!</div>
+    <div class="accent-bar"></div>
+  </div>
+</body>
+</html>
