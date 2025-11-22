@@ -5,22 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Half Marathon Poster</title>
   <style>
-    /* Poster size in pixels approximated for screen (ratio 30w : 20h) */
     body {
       margin: 0;
       padding: 0;
       display: flex;
       justify-content: center;
       align-items: center;
-      background: #f5f5f5;
-      font-family: 'Helvetica Neue', Arial, sans-serif;
+      background: white;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
     }
 
     .poster {
-      width: 900px;  /* proportional to 30 inches */
-      height: 600px; /* proportional to 20 inches */
+      position: relative;
+      width: 900px;
+      height: 600px;
       background: white;
-      border: 12px double purple;
+      border: 12px double pink;
       border-radius: 20px;
       display: flex;
       flex-direction: column;
@@ -28,48 +28,47 @@
       align-items: center;
       text-align: center;
       padding: 30px;
-      box-shadow: 0 0 20px rgba(0,0,0,0.3);
+      box-shadow: 0 0 20px rgba(255,182,193,0.2);
     }
 
     .headline {
       font-size: 72px;
       font-weight: 900;
-      color: black;
-      
+      color: purple;
       line-height: 1.1;
     }
 
     .subtext {
-      margin-top: 30px;
+      margin-top: 20px;
       font-size: 56px;
       font-weight: 800;
-      color: #00a86b; /* green */
-      
+      color: #ff69b4; /* hot pink */
     }
 
-    
-    .corner-doodle {
+    .doodle {
       position: absolute;
-      width: 80px;
-      height: 80px;
-      border: 6px solid pink;
-      border-radius: 20px;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: #ffd700; /* yellow */
     }
+
     .top-left { top: 20px; left: 20px; }
     .top-right { top: 20px; right: 20px; }
     .bottom-left { bottom: 20px; left: 20px; }
     .bottom-right { bottom: 20px; right: 20px; }
+
   </style>
 </head>
 <body>
   <div class="poster">
-    <div class="corner-doodle top-left"></div>
-    <div class="corner-doodle top-right"></div>
-    <div class="corner-doodle bottom-left"></div>
-    <div class="corner-doodle bottom-right"></div>
+    <div class="doodle top-left"></div>
+    <div class="doodle top-right"></div>
+    <div class="doodle bottom-left"></div>
+    <div class="doodle bottom-right"></div>
     <div class="headline">This Park has<br>NO Speed Limit!</div>
     <div class="subtext">Go 다은!</div>
-    
   </div>
 </body>
 </html>
+
